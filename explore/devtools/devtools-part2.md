@@ -1,0 +1,3 @@
+1. In the function calculateSum(num1, num2), the values of num1 and num2 are retrieved directly from the input elements as strings. When the + operator is used with strings, it performs concatenation rather than numerical addition. Thus, if num1 is "2" and num2 is "3", the result would be "23" instead of the expected 5.
+
+2. To correct this issue, you need to convert the input values from strings to numbers before performing the addition. This can be done using parseInt(), parseFloat(), or the unary + operator, depending on whether the inputs are expected to be integers or could include decimals.
